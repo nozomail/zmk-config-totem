@@ -39,23 +39,23 @@
 };
 
 
-/ {
-    behaviors {
-       meh: behavior_meh {
-       			compatible = "zmk,modified-key-press";
-       			label = "MEH";
-       			#binding-cells = <20>;
-       			modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL;
-      };
-
-       hyper: behavior_hyper_hyper {
-             	compatible = "zmk,modified-key-press";
-             	label = "HYPER";
-             	#binding-cells = <31>;
-             	modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL |  MOD_LALT;
-       };
-    };
-};
+/// {
+//    behaviors {
+//       meh: behavior_meh {
+//       			compatible = "zmk,modified-key-press";
+//       			label = "MEH";
+//       			#binding-cells = <20>;
+//       			modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL;
+//      };
+//
+//       hyper: behavior_hyper_hyper {
+//             	compatible = "zmk,modified-key-press";
+//             	label = "HYPER";
+//             	#binding-cells = <31>;
+//             	modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL |  MOD_LALT;
+//       };
+//    };
+//};
 
 
 / {
