@@ -38,15 +38,27 @@
     };
 };
 
+
 / {
-    combos {
-            compatible = "zmk,combos";
-            combo_esc {
-                timeout-ms = <50>;
-                key-positions = <0 1>;
-                bindings = <&kp ESC>;
-            };
+    behaviors {
+       meh: behavior_meh {
+       			compatible = "zmk,modified-key-press";
+       			label = "MEH";
+       			#binding-cells = <20>;
+       			modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL;
+      };
+
+       hyper: behavior_hyper_hyper {
+             	compatible = "zmk,modified-key-press";
+             	label = "HYPER";
+             	#binding-cells = <31>;
+             	modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL;
+       };
     };
+};
+
+
+/ {
 
     macros {
         ten: ten {
@@ -54,7 +66,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <14>;
             bindings
-                = <&macro_press &kp kp_N1 &kp kp_N1>
+                = <&macro_press &kp kp_N1 &kp kp_N0>
                 ;
         };
     };
@@ -72,17 +84,17 @@ label= "BASE"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A/ctl ┃   R/alt   ┃   S/cmd   ┃     T     ┃     D     ┃   ┃     H     ┃     N     ┃  E/cmd    ┃  I/alt    ┃  O/ctl    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃           ┃
+// ┃   MEH     ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃  HYPER    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    ESC    ┃  TAB/NAV  ┃    SPC    ┃   ┃    DEL    ┃  ENT/SYM  ┃  SHIFT    ┃
+//                                     ┃    ESC    ┃  TAB/NAV  ┃    SPC    ┃   ┃ backspace ┃  ENT/SYM  ┃  SHIFT    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
-                &mt LCTRL A &mt LALT R  &mt LGUI S  &kp T       &kp D           &kp H       &kp N       &mt RGUI E  &mt RALT I  &mt RCTRL O
+               &mt LCTRL A &mt LALT R  &mt LGUI S  &kp T       &kp D            &kp H       &kp N       &mt RGUI E  &mt RALT I  &mt RCTRL O
     &kp Z       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp FSLH
-                                        &kp ESC     &lt NAV TAB &kp SPACE       &kp DEL     &lt SYM RET &kp LSHFT
+                                        &kp ESC     &lt NAV TAB &kp SPACE       &kp BSPC    &lt SYM RET &kp LSHFT
                         >;
                 };
 
@@ -100,7 +112,7 @@ label= "SYM"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃     (     ┃     [     ┃   ┃     ]     ┃     )     ┃     -     ┃     .     ┃     \     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    ESC    ┃   BASE    ┃    SPC    ┃   ┃    DEL    ┃   BASE    ┃   SHIFT   ┃
+//                                     ┃    ESC    ┃   BASE    ┃    SPC    ┃   ┃ backspace ┃   BASE    ┃   SHIFT   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
