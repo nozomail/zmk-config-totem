@@ -64,8 +64,8 @@
         };
     };
 
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+      compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
                 base_layer {
@@ -84,10 +84,10 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-               &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
+               &kp X       &kp W       &kp F       &kp P       &kp G           &kp A       &kp L       &kp U       &kp Y       &kp SEMI
                &mt LCTRL A &mt LALT R  &mt LGUI S  &kp T       &kp D           &kp H       &kp N       &mt RGUI E  &mt RALT I  &mt RCTRL O
-    &kp Z      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp FSLH
-                                       &kp ESC     &lt NAV TAB &kp SPACE       &kp BSPC    &lt SYM RET &kp RSHFT
+    &kp Z      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH     &kp H
+                                       &kp ESC     &lt NAV TAB &kp SPACE       &kp BSPC    &lt SYM RET &kp LSHFT
                         >;
                 };
 
@@ -122,7 +122,7 @@ label= "SYM"                              ;
 
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "NAVI"                              ;
+label= "NAV"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃     9     ┃     9     ┃     9     ┃
@@ -163,10 +163,10 @@ label= "ADJ"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &sys_reset  &bt BT_CLR &out OUT_TOG &none      &out OUT_BLE    &none      &none       &none       &kp F9      &none
-                &bootloader &bt BT_NXT  &none       &none       &none          &none      &kp F4      &kp F5      &kp F6      &kp F11
-    &trans      &none       &bt BT_PRV  &none       &none       &none          &none      &kp F1      &kp F2      &kp F3      &kp F10     &trans
-                                        &none       &to BASE    &none          &none      &to BASE    &none
+                &sys_reset  &bt BT_CLR &out OUT_TOG &none       &out OUT_BLE    &none      &none       &none       &kp F9      &none
+                &bootloader &bt BT_NXT  &none       &none       &none           &none      &kp F4      &kp F5      &kp F6      &kp F11
+    &none       &none       &bt BT_PRV  &none       &none       &none           &none      &kp F1      &kp F2      &kp F3      &kp F10     &none
+                                        &none       &to BASE    &none           &none      &to BASE    &none
                         >;
                 };
         };
