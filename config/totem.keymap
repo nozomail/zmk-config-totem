@@ -37,21 +37,6 @@
         };
     };
 
-    behaviors {
-       meh: behavior_meh {
-       			compatible = "zmk,modified-key-press";
-       			label = "MEH";
-       			#binding-cells = <20>;
-       			modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL;
-      };
-
-       hyper: behavior_hyper_hyper {
-             	compatible = "zmk,modified-key-press";
-             	label = "HYPER";
-             	#binding-cells = <31>;
-             	modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL |  MOD_LALT;
-       };
-    };
 
 //  macros {
 //        ten: ten {
@@ -85,7 +70,7 @@ label= "BASE"                              ;
 
                &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                &mt LCTRL A &mt LALT R  &mt LGUI S  &kp T       &kp D           &kp H       &kp N       &mt RGUI E  &mt RALT I  &mt RCTRL O
-    &meh       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH     &hyper
+&kp LC(LG(LALT))  &kp Z    &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH     &kp LS(LC(LG(LALT)))
                                        &kp ESC     &lt NAV TAB &kp SPACE       &kp BSPC    &lt SYM RET &kp LSHIFT
                         >;
                 };
