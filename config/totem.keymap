@@ -66,10 +66,10 @@
 label= "BASE"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
  bindings = <
-               &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J        &kp L       &kp U       &kp Y       &kp SEMI
+               &mt EXCL Q  &mt HASH W  &mt HASH F  &mt DLLR P  &mt PRCNT G     &mt CARET J  &mt AMPS L  &mt DQT U   &mt SQT Y   &mt PIPE SEMI
                &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LT T    &mt LBRC D      &mt RBRC H   &mt GT N    &mt RGUI E  &mt RALT I  &mt RCTRL O
-&kp LC(LG(LALT))  &kp Z    &kp X       &kp C       &mt LPAR V  &mt LBKT B      &mt RBKT K   &mt RPAR M  &kp COMMA   &kp DOT     &kp FSLH     &kp LS(LC(LG(LALT)))
-                                       &kp ESC     &mt LSHIFT SPACE   &lt NAV TAB     &lt SYM RET &mt LSHIFT SPACE  &kp BSPC
+&kp LC(LG(LALT))  &kp Z    &kp X       &kp C       &mt LPAR V  &mt LBKT B      &mt RBKT K   &mt RPAR M  &kp COMMA   &kp DOT     &mt BSLH FSLH   &kp LS(LC(LG(LALT)))
+                                       &kp ESC     &mt LSHIFT SPACE  &lt NAV TAB  &lt SYM RET &mt LSHIFT SPACE  &kp BSPC
                         >;
                 };
 
