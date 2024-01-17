@@ -68,7 +68,7 @@ label= "BASE"                              ;
  bindings = <
                &mt EXCL Q  &mt HASH W  &mt HASH F  &mt DLLR P  &mt PRCNT G     &mt CARET J  &mt AMPS L  &mt DQT U   &mt SQT Y   &mt PIPE SEMI
                &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LT T    &mt LBRC D      &mt RBRC H   &mt GT N    &mt RGUI E  &mt RALT I  &mt RCTRL O
-&kp LC(LG(LALT))  &kp Z    &kp X       &kp C       &mt LPAR V  &mt LBKT B      &mt RBKT K   &mt RPAR M  &kp COMMA   &kp DOT     &mt BSLH FSLH   &kp LS(LC(LG(LALT)))
+&kp LC(LG(LALT))  &kp Z    &mt STAR X  &kp C       &mt LPAR V  &mt LBKT B      &mt RBKT K   &mt RPAR M  &kp COMMA   &kp DOT     &mt BSLH FSLH   &kp LS(LC(LG(LALT)))
                                        &kp ESC     &mt LSHIFT SPACE  &lt NAV TAB  &lt SYM RET &mt LSHIFT SPACE  &kp BSPC
                         >;
                 };
@@ -83,7 +83,7 @@ label= "SYM"                              ;
  bindings = <
                 &kp EXCL    &kp AT     &kp HASH     &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp DQT     &kp SQT     &kp PIPE
                 &kp TILDE   &kp GRAVE  &kp QMARK    &kp LT      &kp LBRC        &kp RBRC    &kp GT      &kp PLUS    &kp EQUAL   &kp UNDER
-    &none       &none       &none      &none        &kp LPAR    &kp LBKT        &kp RBKT    &kp RPAR    &kp MINUS   &kp DOT     &kp BSLH     &none
+    &none       &none       &kp STAR   &none        &kp LPAR    &kp LBKT        &kp RBKT    &kp RPAR    &kp MINUS   &kp DOT     &kp BSLH     &none
                                        &trans       &trans      &trans          &trans      &trans      &trans
                         >;
                 };
