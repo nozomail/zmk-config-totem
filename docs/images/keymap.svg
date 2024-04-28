@@ -205,7 +205,7 @@ path.combo {
 </g>
 <g transform="translate(30, 209) rotate(-10.0)" class="key keypos-20">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap" style="font-size: 60%">backspace</text>
+<text x="0" y="0" class="key tap">delete</text>
 <!-- <tspan style="font-size: 60%">LC(LG(LALT))</tspan> -->
 </g>
 <g transform="translate(93, 223) rotate(-10.0)" class="key keypos-21">
@@ -256,7 +256,7 @@ path.combo {
 </g>
 <g transform="translate(812, 209) rotate(10.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">delete</text>
+<text x="0" y="0" class="key tap" style="font-size: 60%">backspace</text>
 <!-- <text x="0" y="0" class="key tap">
 <tspan style="font-size: 60%">LS(LC(LG(LALT)))</tspan></text> -->
 </g>
@@ -267,13 +267,13 @@ path.combo {
 <g transform="translate(316, 245) rotate(15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">cmd</text>
-<text x="0" y="24" class="key hold">nav</text>
+<!-- <text x="0" y="24" class="key hold">nav</text> -->
 <!-- <text x="0" y="24" class="key hold">LSHIFT</text> -->
 </g>
 <g transform="translate(377, 270) rotate(30.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">shift</text>
-<text x="0" y="24" class="key hold">sym</text>
+<!-- <text x="0" y="24" class="key hold">sym</text> -->
 </g>
 <g transform="translate(465, 270) rotate(-30.0)" class="key keypos-35">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
