@@ -81,9 +81,9 @@ label= "BASE"                              ;
 label= "SYM"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
  bindings = <
-                &kp HASH   &kp DLLR   &kp PRCNT   &kp LT      &kp LBKT          &kp RBKT   &kp GT      &kp MINUS   &kp PLUS    &kp EXCL
-                &kp CAPS   &kp AT     &kp AMPS    &kp LBRC    &kp LPAR          &kp RPAR   &kp RBRC    &kp APOS    &kp DQT     &kp COLON
-      &kp ESC   &kp BSLH   &none      &kp PIPE    &kp TILDE   &kp EQUAL         &kp TAB    &kp GRAVE   &kp STAR    &none       &kp QMARK   &kp RET
+                &kp HASH   &kp DLLR   &kp PRCNT   &kp LBKT    &kp LT            &kp GT     &kp RBKT    &kp MINUS   &kp PLUS    &kp EXCL
+                &kp CAPS   &kp AT     &kp AMPS    &kp LPAR    &kp LBRC          &kp RBRC   &kp RPAR    &kp APOS    &kp DQT     &kp COLON
+      &kp ESC   &kp BSLH   &none      &kp PIPE    &kp TILDE   &kp EQUAL         &kp TAB    &kp GRAVE   &kp STAR    &kp UNDER   &kp QMARK   &kp RET
                                       &trans      &trans      &trans            &trans     &trans     &trans
                         >;
                 };
@@ -96,10 +96,10 @@ label= "SYM"                              ;
 label= "NAV"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
  bindings = <
-                &kp C_VOL_UP       &none       &none       &none       &kp C_BRI_UP        &kp N1      &kp N2      &kp N3      &kp BSPC     &kp RET
-                &kp C_VOL_DN       &kp LEFT    &kp UP      &kp RIGHT   &kp C_BRI_DN        &kp N4      &kp N5      &kp N6      &kp N0       &none
-    &kp GLOBE   &kp C_MUTE         &none       &kp DOWN    &none       &none               &kp N7      &kp N8      &kp N9      &kp N0       &kp C_MUTE      &bt BT_CLR
-                                        &trans      &trans      &trans              &trans      &trans      &trans
+                &kp C_VOL_UP       &none       &none       &none       &none        &kp N1      &kp N2      &kp N3      &kp BSPC     &kp RET
+                &kp C_VOL_DN       &kp LEFT    &kp UP      &kp RIGHT   &none        &kp N4      &kp N5      &kp N6      &kp N0       &kp C_BRI_UP
+    &kp GLOBE   &kp C_MUTE         &none       &kp DOWN    &none       &none        &kp N7      &kp N8      &kp N9      &kp N0       &kp C_BRI_DN   &bt BT_CLR
+                                               &trans      &trans      &trans       &trans      &trans      &trans
                         >;
                 };
 
